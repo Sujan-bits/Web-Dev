@@ -10,4 +10,13 @@ function validateform()
     let letters = /^[A-Za-z]+$/;
     const emailexp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let phoneno = /^\d{10}$/;
+
+    if (firstname.length<6)
+        {  
+          
+          alert("First name can't be less than 6 characters");
+          document.getElementById("fname").focus();  
+          return false;  
+         }
+    
   }
